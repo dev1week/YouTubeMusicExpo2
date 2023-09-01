@@ -1,10 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
-import { Bottom } from './src/Bottom';
-import { CategoryHeader } from './src/CategoryHeader';
-import { HeaderBackground } from './src/HeaderBackground';
-import { LogoHeader } from './src/LogoHeader';
+
+import { Bottom } from './src/bottom/Bottom';
+import { CategoryHeader } from './src/header/CategoryHeader';
+import { HeaderBackground } from './src/header/HeaderBackground';
+import { LogoHeader } from './src/header/LogoHeader';
 import { useState } from 'react';
+
+import {MusicListLarge} from './src/musiclist/MusicListLarge'
+import {MusicListSmall} from './src/musiclist/MusicListSmall'
+import {MusicListMedium} from './src/musiclist/MusicListMedium'
+
 
 export default function App() {
   const [selectedCategory, setSelectedCategory] = useState(); 
@@ -17,10 +23,10 @@ export default function App() {
           selectedCategory= {selectedCategory}
           setSelectedCategory={setSelectedCategory}
           />
-        <ScrollView>
+        <ScrollView style={{borderWidth:1}}>
           <View style={{height: 1000}}>
-          <Text></Text>
-        </View>
+            <MusicListSmall/> 
+          </View>
         </ScrollView>
         <Bottom/>
 
