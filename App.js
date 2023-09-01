@@ -10,16 +10,16 @@ export default function App() {
   const [selectedCategory, setSelectedCategory] = useState(); 
 
   return (
-    <SafeAreaView style={{flex:1, paddingTop:25} }>
-        <HeaderBackground/>
+    <SafeAreaView style={{flex:1, paddingTop:25, backgroundColor:'#111'} }>
+        <HeaderBackground selectedCategory={selectedCategory}/>
         <LogoHeader/>
         <CategoryHeader
           selectedCategory= {selectedCategory}
           setSelectedCategory={setSelectedCategory}
           />
-        <ScrollView style={{borderWidth: 1}}>
+        <ScrollView>
           <View style={{height: 1000}}>
-          <Text>list</Text>
+          <Text></Text>
         </View>
         </ScrollView>
         <Bottom/>
