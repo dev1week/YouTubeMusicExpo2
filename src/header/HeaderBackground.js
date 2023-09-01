@@ -18,7 +18,7 @@ export const HeaderBackground = (selectedCategory)=>{
                 style={{width:'100%', height: 350, opacity:0.3}}
                 />
             ):(
-                <>
+                <View style={{flex:1}}>
                 <Image 
                 source={{uri: `https://picsum.photos/30${selectedCategory.selectedCategory}`}}
                 style={{width:'100%', height: 350, opacity: 0.1 }}
@@ -34,7 +34,7 @@ export const HeaderBackground = (selectedCategory)=>{
                         width: '100%', 
                     }}
                     />
-                </>
+                </View>
             )}
            
         </View>

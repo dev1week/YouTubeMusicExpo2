@@ -26,6 +26,7 @@ export default function App() {
         <ScrollView style={{borderWidth:1}}>
           <View style={{height: 1000}}>
             <MusicListSmall/> 
+            <MusicListMedium/>
           </View>
         </ScrollView>
         <Bottom/>
