@@ -33,6 +33,12 @@ const IconItem = (props)=>{
     return (
         <TouchableOpacity >
             {props.isRed?
+            <View style={{
+                height:45, 
+                width:45, 
+                justifyContent: 'center', 
+                alignItems: 'center',
+            }}> 
                 <View style={{
                     height:30, 
                     width:30, 
@@ -43,6 +49,7 @@ const IconItem = (props)=>{
                    
                 }}>
                     <MaterialIcons name={props.name} color ='white' size={24}/>
+                </View>
                 </View> 
                 :
                 <View style={{
